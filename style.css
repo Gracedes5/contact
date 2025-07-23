@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: url('3D-Email\ img.png') no-repeat center center fixed;
+        background-size: cover;
+}
+.container {
+    width:100% ;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcfafa;
+    display: flex;
+    
+}
+form {
+    width: 100%;
+    background-color: #eec925;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+    padding: 1vw 2vw;
+}
+form h3 {
+    color: #862e05;
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 10px 10px;
+    text-align: center;
+    padding: 10px 0;
+}
+form input, form textarea {
+    
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    outline: none;
+    background: #f1f1f1;
+    font-size: 12px;
+}
+form button {
+    width: 100px;
+    padding: 10px;
+    background: #862e05;
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    margin: 0px auto 0;
+    transition: background-color 0.3s;
+}
