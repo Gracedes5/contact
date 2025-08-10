@@ -2,36 +2,117 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    background: url('3D-Email\ img.png') no-repeat center center fixed;
-        background-size: cover;
+    font-family: Georgia; /* Use a stylish font */
+}
+body {
+    background: url('3D-Email\ img.png') no-repeat left center fixed; /* Align background to the left */
+    background-size: cover; /* Resize the background */
+    padding-top: 60px; /* Add padding to ensure the background starts after the header */
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #010300, #002700); /* Set the background color */
+    padding: 10px 20px;
+    position: fixed; /* Keep the header at the top */
+    top: 0;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    
+    z-index: 10; /* Ensure header is above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow to the header */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #18b803; /* Stylish green color for the logo */
+    font-family: 'Georgia', serif; /* Use a stylish font */
+   
+    letter-spacing: 2px; /* Add spacing between letters */
+padding-left: 40px;
+    position: absolute; /* Position the logo absolutely */
+    left: 20px; /* Align to the left */
+    top: 30px; /* Align to the top */
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #18b803;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #18b803; /* Highlight background on hover */
+    color: #0a0301;
+}
+
+.navbar ul li a.active {
+    background-color: #18b803; /* Active page background */
+    color: #0a0301; /* Active page text color */
+}
+
+
+.background-text {
+    position: absolute;
+right: 150px;
+top: 30%;
+
+font-size: 5rem; /* Enlarged font size */
+font-weight: 900; /* Bolder font weight */
+text-align: right;
+line-height: 1.0; /* Adjust line height for spacing */
 }
 .container {
     width:100% ;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: #fcfafa;
+    background-color: #18b803;
     display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    
     
 }
 form {
     width: 100%;
-    background-color: #eec925;
+    background-color: rgb(180, 245, 149);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    max-width: 260px;
-    padding: 1vw 2vw;
+    max-width: 320px;
+    padding: 2vw;
+    margin: 0 auto; /* Center the form */
 }
 form h3 {
-    color: #862e05;
+    color: #0a0301;
     font-weight: 800;
-    font-size: 16px;
-    margin-bottom: 10px 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
     text-align: center;
     padding: 10px 0;
+
 }
 form input, form textarea {
     
@@ -39,19 +120,49 @@ form input, form textarea {
     margin: 10px 0;
     border: 0;
     outline: none;
-    background: #f1f1f1;
-    font-size: 12px;
+    background: #e3f7e0;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(rgb(46, 44, 44), green, blue, alpha)
 }
 form button {
-    width: 100px;
-    padding: 10px;
-    background: #862e05;
+    width: 100%;
+    padding: 16px;
+    background: #38a302;
     color: #fff;
     border: 0;
-    border-radius: 30px;
-    font-size: 14px;
+    border-radius: 10px;
+    font-size: 20px;
     cursor: pointer;
     outline: none;
-    margin: 0px auto 0;
+    margin: 10px auto 0;
     transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack logo and navbar vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+    }
+
+    .logo {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-bottom: 10px;
+        padding-top: auto;
+        padding-left: 0px;
+    }
+    .navbar ul {
+        flex-direction: row; /* Stack navigation links vertically */
+        align-items: flex-start; /* Align links to the left */
+        width: 100%; /* Take full width */
+        justify-content: center; /* Center the links */
+        padding: center; /* Remove left padding */
+            padding-top: auto;
+        }
+    }
