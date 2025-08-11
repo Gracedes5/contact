@@ -16,9 +16,8 @@ header {
     padding: 10px 20px;
     position: fixed; /* Keep the header at the top */
     top: 0;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 30px;
-    
     z-index: 10; /* Ensure header is above other content */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow to the header */
 }
@@ -28,9 +27,8 @@ header {
     font-weight: bold;
     color: #18b803; /* Stylish green color for the logo */
     font-family: 'Georgia', serif; /* Use a stylish font */
-   
     letter-spacing: 2px; /* Add spacing between letters */
-padding-left: 40px;
+    padding-left: 40px;
     position: absolute; /* Position the logo absolutely */
     left: 20px; /* Align to the left */
     top: 30px; /* Align to the top */
@@ -71,10 +69,9 @@ padding-left: 40px;
 
 
 .background-text {
-    position: absolute;
-right: 150px;
+position: absolute;
+right: 80px;
 top: 30%;
-
 font-size: 5rem; /* Enlarged font size */
 font-weight: 900; /* Bolder font weight */
 text-align: right;
